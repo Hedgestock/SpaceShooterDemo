@@ -27,13 +27,18 @@ public class PlayerLivesHandler : MonoBehaviour
 
     void Start()
     {
+        SpawnPlayer();
+    }
+
+    private void SpawnPlayer()
+    {
         Instantiate(PlayerShip);
     }
 
     public void LoseLife()
     {
         Lives--;
-        Invoke(nameof(Start), 1);
+        Invoke(nameof(SpawnPlayer), 1);
     }
 
     void GameOver()

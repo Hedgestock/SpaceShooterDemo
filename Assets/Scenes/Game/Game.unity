@@ -572,7 +572,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 318575077}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -590,6 +590,7 @@ GameObject:
   - component: {fileID: 760438767}
   - component: {fileID: 760438769}
   - component: {fileID: 760438768}
+  - component: {fileID: 760438770}
   m_Layer: 5
   m_Name: ScoreCounter
   m_TagString: Untagged
@@ -636,10 +637,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <sprite="Number_font (8 x 8)" index=3><sprite="Number_font (8 x 8)" index=3><sprite="Number_font
-    (8 x 8)" index=3><sprite="Number_font (8 x 8)" index=3><sprite="Number_font (8
-    x 8)" index=3><sprite="Number_font (8 x 8)" index=3><sprite="Number_font (8 x
-    8)" index=3><sprite="Number_font (8 x 8)" index=3>
+  m_text: <sprite="Number_font (8 x 8)" index=0><sprite="Number_font (8 x 8)" index=0><sprite="Number_font
+    (8 x 8)" index=0><sprite="Number_font (8 x 8)" index=0><sprite="Number_font (8
+    x 8)" index=0><sprite="Number_font (8 x 8)" index=0><sprite="Number_font (8 x
+    8)" index=0>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -719,6 +720,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 760438766}
   m_CullTransparentMesh: 1
+--- !u!114 &760438770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760438766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e514bdab8e7a4e948b55d42ed6b3aa7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &993473383
 GameObject:
   m_ObjectHideFlags: 0
@@ -862,7 +875,7 @@ MonoBehaviour:
   PWR: {fileID: 142987119}
   LifeIcon: {fileID: 1855332824}
   LifeCounter: {fileID: 1939268028}
-  ScoreCounter: {fileID: 0}
+  ScoreCounter: {fileID: 760438767}
 --- !u!1 &1012773079
 GameObject:
   m_ObjectHideFlags: 0

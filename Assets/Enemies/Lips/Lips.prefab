@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 6479994794282015555}
   - component: {fileID: 1035301396595283358}
   - component: {fileID: 8132720730074151799}
-  - component: {fileID: -5445873000134820263}
+  - component: {fileID: 201561236305078379}
   m_Layer: 7
   m_Name: Lips
   m_TagString: Cleanable
@@ -242,7 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb967fdf7f46b264cbb5f68d9fc0ffe9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RandomShoot
---- !u!114 &-5445873000134820263
+--- !u!114 &201561236305078379
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -253,4 +253,5 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 73a87dfdd9bc7ce42bbd928aba0179f8, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
+  m_EditorClassIdentifier: Assembly-CSharp::Scorer
+  Score: 200

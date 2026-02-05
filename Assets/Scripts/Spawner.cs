@@ -20,6 +20,9 @@ public class Spawner : MonoBehaviour
             {
                 foreach (var gameObject in GameObject.FindGameObjectsWithTag("Cleanable"))
                 {
+                    Scorer s = gameObject.GetComponent<Scorer>();
+                    if (s) //C# 10 would have let me use a null conditional assignment but Unity only support 9
+                        s.Score = 0;
                     Destroy(gameObject);
                 }
             }

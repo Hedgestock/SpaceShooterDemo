@@ -20,7 +20,7 @@ public class Life : MonoBehaviour
             return _life;
         }
         set
-        {   
+        {
             if (value < _life)
             {
                 if (IsInvul) return;
@@ -28,15 +28,14 @@ public class Life : MonoBehaviour
                     StartCoroutine(nameof(InvulRoutine));
             }
 
+            _life = value;
+            LifeChanged.Invoke(_life);
+
             if (value <= 0)
             {
                 Instantiate(explosion, transform.position, transform.rotation);
                 Destroy(gameObject);
-                return;
             }
-
-            _life = value;
-            LifeChanged.Invoke(_life);
         }
     }
 

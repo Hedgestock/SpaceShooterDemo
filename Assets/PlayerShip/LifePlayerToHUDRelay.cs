@@ -9,7 +9,7 @@ public class LifePlayerToHUDRelay : MonoBehaviour
     void Start()
     {
         life = GetComponent<Life>();
-        lifeTracker = GameObject.Find("LifeSlider"). GetComponent<TrackLife>();
+        lifeTracker = GameObject.Find("LifeSlider").GetComponent<TrackLife>();
         life.LifeChanged.AddListener(lifeTracker.UpdateLife);
         lifeTracker.SetMaxLife(life.LifePoints);
     }

@@ -2,17 +2,10 @@ using UnityEngine;
 
 public class Scorer : MonoBehaviour
 {
-    public int Score;
+    public int Score = 200;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void OnDestroy()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        GameObject.Find("ScoreCounter").GetComponent<Score>().AddScore(Score);
     }
 }

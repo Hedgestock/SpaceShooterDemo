@@ -8,6 +8,7 @@ public class StartGame : MonoBehaviour
     {
         transform.position = Vector3.up * (Camera.main.orthographicSize + 1);
         transform.DOMove(Vector3.up * 2, 1).SetEase(Ease.OutBack);
+        GameObject.Find("ScoreCounter").GetComponent<Score>().ResetScore();
     }
 
     void OnDestroy()
