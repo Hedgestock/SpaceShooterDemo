@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Life : MonoBehaviour
 {
@@ -34,8 +36,12 @@ public class Life : MonoBehaviour
             }
 
             _life = value;
+            LifeChanged.Invoke(_life);
         }
     }
+
+    public UnityEvent<int> LifeChanged;
+
 
     SpriteRenderer sprite;
     Collider2D hurtBox;

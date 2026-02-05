@@ -225,6 +225,7 @@ GameObject:
   - component: {fileID: 2974391710165514154}
   - component: {fileID: 810973712180037358}
   - component: {fileID: 6154477114582234399}
+  - component: {fileID: 5973542266628080854}
   m_Layer: 6
   m_Name: PlayerShip
   m_TagString: Player
@@ -483,6 +484,9 @@ MonoBehaviour:
   IsInvul: 1
   _invul: 10
   _life: 20
+  LifeChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &6154477114582234399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,3 +500,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
   damage: 10
+--- !u!114 &5973542266628080854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5970791269388164427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5333f5abda743394781af28a9d123cab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
