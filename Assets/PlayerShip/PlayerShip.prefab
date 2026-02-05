@@ -483,7 +483,7 @@ MonoBehaviour:
   explosion: {fileID: 6660806675126263608, guid: 54a60d769ad84f741ab5190d39b7b383, type: 3}
   IsInvul: 1
   _invul: 10
-  _life: 1
+  _life: 20
   LifeChanged:
     m_PersistentCalls:
       m_Calls: []

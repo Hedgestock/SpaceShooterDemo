@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class Life : MonoBehaviour
 {
@@ -26,6 +27,10 @@ public class Life : MonoBehaviour
                 if (IsInvul) return;
                 if (_invul > 0)
                     StartCoroutine(nameof(InvulRoutine));
+            }
+            else
+            {
+                value = (int)Mathf.Min(value, GameObject.Find("LifeSlider").GetComponent<Slider>().maxValue);
             }
 
             _life = value;
@@ -55,7 +60,7 @@ public class Life : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (transform.position.y > Camera.main.orthographicSize * 2 || transform.position.y < -Camera.main.orthographicSize * 2) 
+        if (transform.position.y > Camera.main.orthographicSize * 2 || transform.position.y < -Camera.main.orthographicSize * 2)
             Destroy(gameObject);
     }
 

@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 1035301396595283358}
   - component: {fileID: 8132720730074151799}
   - component: {fileID: -7074237080069530432}
+  - component: {fileID: 7096982749561404227}
   m_Layer: 7
   m_Name: Alan
   m_TagString: Cleanable
@@ -255,3 +256,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Scorer
   Score: 100
+--- !u!114 &7096982749561404227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7348817954566610107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 814219107fa696144bf8a18ab1cbd9d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DropLoot
+  Items:
+  - {fileID: 6696180124740904126, guid: 02082e95d6cbee4448c71f34ecc79e88, type: 3}
