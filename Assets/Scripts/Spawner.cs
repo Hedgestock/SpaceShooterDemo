@@ -39,6 +39,8 @@ public class Spawner : MonoBehaviour
 
         GameObject enemy = Instantiate(Enemies[Random.Range(0, Enemies.Count)]);
 
+        Debug.Log(enemy.name);
+
         enemy.transform.position = new(Random.Range(-width, width), height + 2);
         enemy.GetComponent<Rigidbody2D>().linearVelocity += GameObject.Find("Grid").GetComponent<Rigidbody2D>().linearVelocity;
 
