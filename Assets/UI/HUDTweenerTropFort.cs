@@ -8,6 +8,7 @@ public class HUDTweenerTropFort : MonoBehaviour
     public RectTransform PWR;
     public RectTransform LifeIcon;
     public RectTransform LifeCounter;
+    public RectTransform ScoreCounter;
 
     public Sequence On()
     {
@@ -17,6 +18,7 @@ public class HUDTweenerTropFort : MonoBehaviour
         HUDOn.Join(PWR.DOAnchorPos(new(-17, -48), 1));
         HUDOn.Join(LifeIcon.DOAnchorPos(new(-16, 16), 1));
         HUDOn.Join(LifeCounter.DOAnchorPos(new(-35, 18), 1));
+        HUDOn.Join(ScoreCounter.DOAnchorPos(new(35, 18), 1));
         return HUDOn;
     }
 
@@ -28,6 +30,7 @@ public class HUDTweenerTropFort : MonoBehaviour
         HUDOff.Join(PWR.DOAnchorPos(new(40, -48), 1));
         HUDOff.Join(LifeIcon.DOAnchorPos(new(40, 16), 1));
         HUDOff.Join(LifeCounter.DOAnchorPos(new(-35, -35), 1));
+        HUDOff.Join(ScoreCounter.DOAnchorPos(new(35, -35), 1));
         return HUDOff;
     }
 }
