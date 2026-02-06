@@ -16,6 +16,9 @@ GameObject:
   - component: {fileID: 6550612556550696224}
   - component: {fileID: 9200911362298655798}
   - component: {fileID: 3493122085822256166}
+  - component: {fileID: 4479759090774528735}
+  - component: {fileID: 1720482280026074732}
+  - component: {fileID: -7257731616603982399}
   m_Layer: 9
   m_Name: SquareCharged
   m_TagString: Cleanable
@@ -136,6 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a76f0c2ece71e124e9cc6b033d323902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Projectile
+  Charged: {fileID: 0}
   speed: 7
 --- !u!114 &-2087835297370126694
 MonoBehaviour:
@@ -227,3 +231,47 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.45
+--- !u!114 &4479759090774528735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3199993505279492940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5ff76cc9f9991249af38c70da2e491d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Shoot
+  Projectile: {fileID: 3199993505279492940, guid: ca2f2a9b0098f014ca837ec0266e506c, type: 3}
+  nonRelative: 1
+  barrelPosition: {x: 0.5, y: 0, z: 0}
+  barrelDirection: {x: 1, y: 0}
+--- !u!114 &1720482280026074732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3199993505279492940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5ff76cc9f9991249af38c70da2e491d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Shoot
+  Projectile: {fileID: 3199993505279492940, guid: ca2f2a9b0098f014ca837ec0266e506c, type: 3}
+  nonRelative: 1
+  barrelPosition: {x: -0.5, y: 0, z: 0}
+  barrelDirection: {x: -1, y: 0}
+--- !u!114 &-7257731616603982399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3199993505279492940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a203d34584ab6b14583ff3f87dd50cb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShootOnCollision

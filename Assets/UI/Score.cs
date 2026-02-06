@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Score : MonoBehaviour
 {
-    private TextMeshProUGUI ScoreText;
+    public TextMeshProUGUI ScoreText;
     private int _score = 0;
     private int ScorePoints
     {
@@ -26,12 +26,6 @@ public class Score : MonoBehaviour
                 ScoreText.text = $"<sprite=\"Number_font (8 x 8)\" index={digit}>" + ScoreText.text;
             }
         }
-    }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        ScoreText = GetComponent<TextMeshProUGUI>();
-        scoreTween.Play();
     }
 
     int scoreToTween = 0;

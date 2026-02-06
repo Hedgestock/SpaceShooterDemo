@@ -53,9 +53,9 @@ public class ShipMovement : MonoBehaviour
             transform.position = new Vector3(clampedX, clampedY);
         }
     }
-    void OnMove(InputValue value)
+    public void OnMove(InputAction.CallbackContext context)
     {
-        movement = value.Get<Vector2>();
+        movement = context.ReadValue<Vector2>();
     }
 
     void OnDestroy()

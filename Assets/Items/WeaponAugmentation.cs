@@ -22,7 +22,7 @@ public class WeaponAugmentation : MonoBehaviour
         }
 
         foreach (var weapon in weapons)
-            weapon.projectile = Projectile;
+            weapon.Projectile = Projectile;
 
         Destroy(gameObject);
     }

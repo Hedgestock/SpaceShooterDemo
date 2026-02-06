@@ -273,7 +273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5ff76cc9f9991249af38c70da2e491d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Shoot
-  projectile: {fileID: 4534018363861451957, guid: d034329b597291c46830ca5e50deedec, type: 3}
+  Projectile: {fileID: 4534018363861451957, guid: d034329b597291c46830ca5e50deedec, type: 3}
   nonRelative: 0
   barrelPosition: {x: 0, y: 0, z: 0}
   barrelDirection: {x: 0, y: -1}
@@ -289,7 +289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5ff76cc9f9991249af38c70da2e491d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Shoot
-  projectile: {fileID: 4534018363861451957, guid: d98ad75d4b0847247ac9549694b5fafd, type: 3}
+  Projectile: {fileID: 4534018363861451957, guid: d98ad75d4b0847247ac9549694b5fafd, type: 3}
   nonRelative: 0
   barrelPosition: {x: 0.5, y: 0, z: 0}
   barrelDirection: {x: 0.5, y: -1}
@@ -305,7 +305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5ff76cc9f9991249af38c70da2e491d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Shoot
-  projectile: {fileID: 4534018363861451957, guid: d98ad75d4b0847247ac9549694b5fafd, type: 3}
+  Projectile: {fileID: 4534018363861451957, guid: d98ad75d4b0847247ac9549694b5fafd, type: 3}
   nonRelative: 0
   barrelPosition: {x: -0.5, y: 0, z: 0}
   barrelDirection: {x: -0.5, y: -1}
