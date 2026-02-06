@@ -14,9 +14,11 @@ GameObject:
   - component: {fileID: 6471758494936479295}
   - component: {fileID: 952453360318303815}
   - component: {fileID: -6084520833041155965}
+  - component: {fileID: 1077620684508404291}
+  - component: {fileID: 5938665279994331528}
   m_Layer: 11
   m_Name: Health
-  m_TagString: Untagged
+  m_TagString: Cleanable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -192,3 +194,30 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1077620684508404291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6696180124740904126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70fc45e3767dc03418864b681837b68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Dropping
+  DroppingDiff: 1
+--- !u!114 &5938665279994331528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6696180124740904126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56936e0f7f1ab004aa007adf511857c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponAugmentation
+  both: 1
+  Projectile: {fileID: 3199993505279492940, guid: e3eb0d0e3f18f3747a7fb0ede2797e64, type: 3}

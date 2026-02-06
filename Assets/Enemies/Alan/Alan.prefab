@@ -268,5 +268,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 814219107fa696144bf8a18ab1cbd9d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DropLoot
+  DropPercentage: 5
   Items:
   - {fileID: 6696180124740904126, guid: 02082e95d6cbee4448c71f34ecc79e88, type: 3}
+  - {fileID: 6696180124740904126, guid: 02082e95d6cbee4448c71f34ecc79e88, type: 3}
+  - {fileID: 6696180124740904126, guid: 02082e95d6cbee4448c71f34ecc79e88, type: 3}
+  - {fileID: 6696180124740904126, guid: 02082e95d6cbee4448c71f34ecc79e88, type: 3}
+  - {fileID: 6696180124740904126, guid: 02082e95d6cbee4448c71f34ecc79e88, type: 3}
+  - {fileID: 9187464667678637342, guid: ae55c929249b0c5439e7bd42dc397d21, type: 3}
+  - {fileID: 9187464667678637342, guid: 3caa703ac6ee1af49a0128b2e638c2d5, type: 3}
