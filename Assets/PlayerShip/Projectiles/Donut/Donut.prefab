@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a76f0c2ece71e124e9cc6b033d323902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Projectile
-  velocity: {x: 0, y: 30}
+  speed: 30
 --- !u!114 &-2087835297370126694
 MonoBehaviour:
   m_ObjectHideFlags: 0

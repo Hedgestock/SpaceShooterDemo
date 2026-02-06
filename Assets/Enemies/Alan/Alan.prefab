@@ -203,7 +203,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Shoot
   projectile: {fileID: 4534018363861451957, guid: d98ad75d4b0847247ac9549694b5fafd, type: 3}
+  nonRelative: 0
   barrelPosition: {x: 0, y: 0, z: 0}
+  barrelDirection: {x: 0, y: -1}
 --- !u!50 &1035301396595283358
 Rigidbody2D:
   serializedVersion: 5

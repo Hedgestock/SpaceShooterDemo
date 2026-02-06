@@ -14,11 +14,13 @@ GameObject:
   - component: {fileID: 9072638475415094521}
   - component: {fileID: 1173661961283550721}
   - component: {fileID: -4040236641707025083}
-  - component: {fileID: 6479994794282015555}
   - component: {fileID: 1035301396595283358}
   - component: {fileID: 8132720730074151799}
   - component: {fileID: 201561236305078379}
   - component: {fileID: 178446771005795420}
+  - component: {fileID: 6479994794282015555}
+  - component: {fileID: 3405589168773110149}
+  - component: {fileID: 9194637258435770293}
   m_Layer: 7
   m_Name: BonBon
   m_TagString: Cleanable
@@ -190,20 +192,6 @@ MonoBehaviour:
   LifeChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &6479994794282015555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7348817954566610107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5ff76cc9f9991249af38c70da2e491d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Shoot
-  projectile: {fileID: 4534018363861451957, guid: d034329b597291c46830ca5e50deedec, type: 3}
-  barrelPosition: {x: 0, y: 0, z: 0}
 --- !u!50 &1035301396595283358
 Rigidbody2D:
   serializedVersion: 5
@@ -273,3 +261,51 @@ MonoBehaviour:
   - {fileID: 6696180124740904126, guid: 02082e95d6cbee4448c71f34ecc79e88, type: 3}
   - {fileID: 9187464667678637342, guid: 3caa703ac6ee1af49a0128b2e638c2d5, type: 3}
   - {fileID: 9187464667678637342, guid: ae55c929249b0c5439e7bd42dc397d21, type: 3}
+--- !u!114 &6479994794282015555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7348817954566610107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5ff76cc9f9991249af38c70da2e491d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Shoot
+  projectile: {fileID: 4534018363861451957, guid: d034329b597291c46830ca5e50deedec, type: 3}
+  nonRelative: 0
+  barrelPosition: {x: 0, y: 0, z: 0}
+  barrelDirection: {x: 0, y: -1}
+--- !u!114 &3405589168773110149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7348817954566610107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5ff76cc9f9991249af38c70da2e491d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Shoot
+  projectile: {fileID: 4534018363861451957, guid: d98ad75d4b0847247ac9549694b5fafd, type: 3}
+  nonRelative: 0
+  barrelPosition: {x: 0.5, y: 0, z: 0}
+  barrelDirection: {x: 0.5, y: -1}
+--- !u!114 &9194637258435770293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7348817954566610107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5ff76cc9f9991249af38c70da2e491d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Shoot
+  projectile: {fileID: 4534018363861451957, guid: d98ad75d4b0847247ac9549694b5fafd, type: 3}
+  nonRelative: 0
+  barrelPosition: {x: -0.5, y: 0, z: 0}
+  barrelDirection: {x: -0.5, y: -1}

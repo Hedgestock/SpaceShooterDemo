@@ -203,7 +203,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Shoot
   projectile: {fileID: 4534018363861451957, guid: d98ad75d4b0847247ac9549694b5fafd, type: 3}
+  nonRelative: 0
   barrelPosition: {x: 0, y: 0, z: 0}
+  barrelDirection: {x: 0, y: -1}
 --- !u!50 &1035301396595283358
 Rigidbody2D:
   serializedVersion: 5
@@ -268,6 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 814219107fa696144bf8a18ab1cbd9d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DropLoot
+  DropPercentage: 10
   Items:
   - {fileID: 6696180124740904126, guid: 02082e95d6cbee4448c71f34ecc79e88, type: 3}
   - {fileID: 9187464667678637342, guid: ae55c929249b0c5439e7bd42dc397d21, type: 3}
