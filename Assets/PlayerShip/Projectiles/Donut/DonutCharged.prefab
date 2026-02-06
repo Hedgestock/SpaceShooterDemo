@@ -16,8 +16,11 @@ GameObject:
   - component: {fileID: 6550612556550696224}
   - component: {fileID: -8910585159724034927}
   - component: {fileID: 9200911362298655798}
+  - component: {fileID: 8944192988921091391}
+  - component: {fileID: 2516896683137082845}
+  - component: {fileID: 5453737416704522336}
   m_Layer: 9
-  m_Name: Donut
+  m_Name: DonutCharged
   m_TagString: Cleanable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87,7 +90,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -7757620208061290503, guid: 5ae70bfb8fc34194c9ee8f8c7c27271c, type: 3}
+  m_Sprite: {fileID: 3711926829960190991, guid: e9be0ac4b2b386a448ccce4490550be5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -136,8 +139,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a76f0c2ece71e124e9cc6b033d323902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Projectile
-  Charged: {fileID: 3199993505279492940, guid: f0551079ba1ff8a4e9aa46e7420db88e, type: 3}
-  speed: 30
+  Charged: {fileID: 0}
+  speed: 35
 --- !u!114 &-2087835297370126694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,7 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f405459e9a1b3384a9856965724d8858, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Damage
-  damage: 1
+  damage: 3
 --- !u!58 &-8910585159724034927
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -205,7 +208,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.1
+  m_Radius: 0.25
 --- !u!95 &9200911362298655798
 Animator:
   serializedVersion: 7
@@ -216,7 +219,7 @@ Animator:
   m_GameObject: {fileID: 3199993505279492940}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 69c05fd103b95d44e993f02ea967728f, type: 2}
+  m_Controller: {fileID: 9100000, guid: 80fb2c1923ab9194e8c9e798da96afe0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -228,3 +231,47 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8944192988921091391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3199993505279492940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a203d34584ab6b14583ff3f87dd50cb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShootOnCollision
+--- !u!114 &2516896683137082845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3199993505279492940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5ff76cc9f9991249af38c70da2e491d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Shoot
+  Projectile: {fileID: 3199993505279492940, guid: 84176c6b995b90349ab2fc5b2de4e237, type: 3}
+  nonRelative: 0
+  barrelPosition: {x: 0, y: 0, z: 0}
+  barrelDirection: {x: 1, y: 0}
+--- !u!114 &5453737416704522336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3199993505279492940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5ff76cc9f9991249af38c70da2e491d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Shoot
+  Projectile: {fileID: 3199993505279492940, guid: 84176c6b995b90349ab2fc5b2de4e237, type: 3}
+  nonRelative: 0
+  barrelPosition: {x: 0, y: 0, z: 0}
+  barrelDirection: {x: -1, y: 0}

@@ -226,6 +226,7 @@ GameObject:
   - component: {fileID: 810973712180037358}
   - component: {fileID: 6154477114582234399}
   - component: {fileID: 5973542266628080854}
+  - component: {fileID: 3272006872851775303}
   m_Layer: 6
   m_Name: PlayerShip
   m_TagString: Player
@@ -374,21 +375,9 @@ MonoBehaviour:
     m_ActionName: 'Player/Look[/Mouse/delta,/Pen/delta]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -3984085316263467343}
-        m_TargetAssemblyTypeName: Shoot, Assembly-CSharp
-        m_MethodName: OnFire
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2974391710165514154}
-        m_TargetAssemblyTypeName: Shoot, Assembly-CSharp
-        m_MethodName: OnFire
+      - m_Target: {fileID: 3272006872851775303}
+        m_TargetAssemblyTypeName: Charge, Assembly-CSharp
+        m_MethodName: ChargeFire
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -540,7 +529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5ff76cc9f9991249af38c70da2e491d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Shoot
-  Projectile: {fileID: 3199993505279492940, guid: c3d5cf7b789674545b71e15faeecdef4, type: 3}
+  Projectile: {fileID: 3199993505279492940, guid: e3eb0d0e3f18f3747a7fb0ede2797e64, type: 3}
   nonRelative: 0
   barrelPosition: {x: -0.28125, y: 0.25, z: 0}
   barrelDirection: {x: 0, y: 1}
@@ -556,7 +545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5ff76cc9f9991249af38c70da2e491d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Shoot
-  Projectile: {fileID: 3199993505279492940, guid: c3d5cf7b789674545b71e15faeecdef4, type: 3}
+  Projectile: {fileID: 3199993505279492940, guid: e3eb0d0e3f18f3747a7fb0ede2797e64, type: 3}
   nonRelative: 0
   barrelPosition: {x: 0.28125, y: 0.25, z: 0}
   barrelDirection: {x: 0, y: 1}
@@ -604,3 +593,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5333f5abda743394781af28a9d123cab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+--- !u!114 &3272006872851775303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5970791269388164427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aacc845039029fe41997594c5894baf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Charge

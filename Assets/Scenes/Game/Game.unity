@@ -318,7 +318,7 @@ MonoBehaviour:
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -452,7 +452,6 @@ GameObject:
   m_Component:
   - component: {fileID: 182207776}
   - component: {fileID: 182207775}
-  - component: {fileID: 182207777}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -473,8 +472,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   Enemies:
-  - {fileID: 7348817954566610107, guid: 98f2f8277149fdc4d8871a424dfc149b, type: 3}
   - {fileID: 7348817954566610107, guid: 8b20b0d6685323f4481d8057ce1fc4b2, type: 3}
+  - {fileID: 7348817954566610107, guid: 8b20b0d6685323f4481d8057ce1fc4b2, type: 3}
+  - {fileID: 7348817954566610107, guid: 8b20b0d6685323f4481d8057ce1fc4b2, type: 3}
+  - {fileID: 7348817954566610107, guid: 8b20b0d6685323f4481d8057ce1fc4b2, type: 3}
+  - {fileID: 7348817954566610107, guid: 98f2f8277149fdc4d8871a424dfc149b, type: 3}
+  - {fileID: 7348817954566610107, guid: 98f2f8277149fdc4d8871a424dfc149b, type: 3}
   - {fileID: 7348817954566610107, guid: 508893ec2ebb1e649999f793ae4e648d, type: 3}
 --- !u!4 &182207776
 Transform:
@@ -491,52 +494,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &182207777
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 182207774}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &216489116
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,7 +961,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
