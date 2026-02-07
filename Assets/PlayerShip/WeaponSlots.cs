@@ -1,7 +1,6 @@
 using DG.Tweening;
 using System.Linq;
 using UnityEngine;
-using static UnityEditor.PlayerSettings;
 
 public class WeaponSlots : MonoBehaviour
 {
