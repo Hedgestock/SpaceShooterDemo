@@ -6,26 +6,39 @@ public class Charge : MonoBehaviour
 {
 
     bool charging = false;
+    bool shooting = false;
     private Slider ChargeBar;
 
     public void ChargeFire(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            charging = true;
+            if (ChargeBar.value > .93f)
+                gameObject.SendMessage("FireCharged");
+            else
+                gameObject.SendMessage("OnFire");
+
+            ChargeBar.value = 0;
+
+            shooting = charging = true;
+
+            PeriodicShoot();
         }
         if (context.canceled)
         {
-            charging = false;
-            if (ChargeBar.value > .93f)
-            {
-                gameObject.SendMessage("FireCharged");
-                ChargeBar.value = 0;
-            }
-            else
-                gameObject.SendMessage("OnFire");
-            ChargeBar.value = 0;
+            shooting = charging = false;
+            CancelInvoke(nameof(PeriodicShoot));
         }
+    }
+
+    void PeriodicShoot()
+    {
+        if (!shooting) return;
+
+        if (ChargeBar.value > .93f)
+            gameObject.SendMessage("OnFire");
+
+        Invoke(nameof(PeriodicShoot), .2f);
     }
 
     void Awake()
@@ -38,5 +51,8 @@ public class Charge : MonoBehaviour
         if (!charging) return;
 
         ChargeBar.value = Mathf.Min(ChargeBar.value + Time.deltaTime, 1);
+
+        if (ChargeBar.value >= 1)
+            charging = false;
     }
 }

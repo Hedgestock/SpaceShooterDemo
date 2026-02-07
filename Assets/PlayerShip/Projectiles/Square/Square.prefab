@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a76f0c2ece71e124e9cc6b033d323902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Projectile
-  Charged: {fileID: 4534018363861451957, guid: d98ad75d4b0847247ac9549694b5fafd, type: 3}
+  Charged: {fileID: 3199993505279492940, guid: c3d5cf7b789674545b71e15faeecdef4, type: 3}
   speed: 10
 --- !u!114 &-2087835297370126694
 MonoBehaviour:
