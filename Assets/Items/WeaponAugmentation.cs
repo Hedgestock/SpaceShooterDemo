@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Linq;
 using UnityEngine;
 
@@ -12,18 +13,18 @@ public class WeaponAugmentation : MonoBehaviour
     {
         Shoot[] weapons = null;
         if (both)
-            weapons = other.GetComponents<Shoot>();
+        {
+            other.GetComponent<WeaponSlots>().LeftAugment = gameObject;
+            other.GetComponent<WeaponSlots>().RightAugment = gameObject;
+            Destroy(gameObject);
+        }
         else
         {
             if (transform.position.x < other.transform.position.x)
-                weapons = other.GetComponents<Shoot>().Where(w => w.barrelPosition.x < 0).ToArray();
+                other.GetComponent<WeaponSlots>().LeftAugment = gameObject;
             else
-                weapons = other.GetComponents<Shoot>().Where(w => w.barrelPosition.x >= 0).ToArray();
+                other.GetComponent<WeaponSlots>().RightAugment = gameObject;
         }
 
-        foreach (var weapon in weapons)
-            weapon.Projectile = Projectile;
-
-        Destroy(gameObject);
     }
 }

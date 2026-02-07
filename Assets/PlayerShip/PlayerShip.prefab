@@ -227,6 +227,7 @@ GameObject:
   - component: {fileID: 6154477114582234399}
   - component: {fileID: 5973542266628080854}
   - component: {fileID: 3272006872851775303}
+  - component: {fileID: 6723107905909437430}
   m_Layer: 6
   m_Name: PlayerShip
   m_TagString: Player
@@ -605,3 +606,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aacc845039029fe41997594c5894baf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Charge
+--- !u!114 &6723107905909437430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5970791269388164427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 620a5dc3190b83d4b80091ddf332ce48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'

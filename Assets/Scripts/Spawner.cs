@@ -23,6 +23,11 @@ public class Spawner : MonoBehaviour
                     Scorer s = gameObject.GetComponent<Scorer>();
                     if (s) //C# 10 would have let me use a null conditional assignment but Unity only support 9
                         s.Score = 0;
+
+                    DropLoot d = gameObject.GetComponent<DropLoot>();
+                    if (d)
+                        d.DropPercentage = 0;
+
                     Destroy(gameObject);
                 }
             }
