@@ -169,6 +169,17 @@
                 },
                 {
                     "name": "",
+                    "id": "828aa4ec-9df4-4994-8548-7d6004df1f4a",
+                    "path": "<Sensor>/{Tilt}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "c1f7a91b-d0fd-4a62-997e-7fb9b69bf235",
                     "path": "<Gamepad>/rightStick",
                     "interactions": "",

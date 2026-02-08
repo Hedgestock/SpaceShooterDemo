@@ -27,8 +27,8 @@ public class TrackLife : MonoBehaviour
             sliderTween = DOTween.Sequence();
             sliderTween.Append(DOTween.To(() => slider.value, x => slider.value = x, lp, .2f));
 
-            sliderTween.Join(sliderTransform.DOScaleY(Math.Max(5, 2 + Math.Abs(slider.value - lp) / 2), .1f).SetEase(Ease.OutElastic));
-            sliderTween.Append(sliderTransform.DOScaleY(2, .1f).SetEase(Ease.InBounce));
+            sliderTween.Join(sliderTransform.DOScaleY(Math.Max(3, 1 + Math.Abs(slider.value - lp) / 4), .1f).SetEase(Ease.OutElastic));
+            sliderTween.Append(sliderTransform.DOScaleY(1, .1f).SetEase(Ease.InBounce));
         }
     }
 }
