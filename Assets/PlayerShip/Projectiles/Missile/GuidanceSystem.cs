@@ -11,6 +11,28 @@ public class GuidanceSystem : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        FindTarget();
+    }
+
+    void FixedUpdate()
+    {
+        if (target)
+        {
+            var direction = target.transform.position - transform.position;
+
+            rb.AddForce(direction.normalized * (50 / direction.magnitude));
+            rb.linearVelocity = Vector2.ClampMagnitude(rb.linearVelocity, 7);
+        }
+        else
+        {
+            FindTarget();
+        }
+
+        animator.SetInteger("Direction", (int)(Vector2.SignedAngle(Quaternion.AngleAxis(-22.5f, Vector3.forward) * Vector2.down, rb.linearVelocity) / 45 + 4));
+    }
+
+    void FindTarget()
+    {
         float distance = float.MaxValue;
         target = FindObjectsByType<Scorer>(FindObjectsSortMode.None).Aggregate(null, (Scorer closest, Scorer next) =>
         {
@@ -24,18 +46,5 @@ public class GuidanceSystem : MonoBehaviour
 
         }
         ).gameObject;
-    }
-
-    void FixedUpdate()
-    {
-        if (target)
-        {
-            var direction = target.transform.position - transform.position;
-
-            rb.AddForce(direction.normalized * (50 / direction.magnitude));
-            rb.linearVelocity = Vector2.ClampMagnitude(rb.linearVelocity, 7);
-        }
-
-        animator.SetInteger("Direction", (int)(Vector2.SignedAngle(Quaternion.AngleAxis(-22.5f, Vector3.forward) * Vector2.down, rb.linearVelocity) / 45 + 4));
     }
 }

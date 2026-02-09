@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70fc45e3767dc03418864b681837b68c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dropping
-  DroppingDiff: 2
+  DroppingDiff: 3
 --- !u!50 &-4008870840696346522
 Rigidbody2D:
   serializedVersion: 5

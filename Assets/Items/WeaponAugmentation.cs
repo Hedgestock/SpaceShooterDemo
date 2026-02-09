@@ -11,7 +11,6 @@ public class WeaponAugmentation : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Shoot[] weapons = null;
         if (both)
         {
             other.GetComponent<WeaponSlots>().LeftAugment = gameObject;
@@ -25,6 +24,5 @@ public class WeaponAugmentation : MonoBehaviour
             else
                 other.GetComponent<WeaponSlots>().RightAugment = gameObject;
         }
-
     }
 }

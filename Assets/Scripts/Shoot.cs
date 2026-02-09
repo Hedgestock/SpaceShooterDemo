@@ -18,7 +18,7 @@ public class Shoot : MonoBehaviour
 
     void FireCharged()
     {
-        Fire(Projectile.GetComponent<Projectile>().Charged);
+        Fire(Projectile.GetComponent<Projectile>().Charged ?? Projectile);
     }
 
     void Fire(GameObject projectile)

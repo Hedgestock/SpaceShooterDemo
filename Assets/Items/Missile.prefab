@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   both: 0
-  Projectile: {fileID: 3199993505279492940, guid: db89812f2995c0644aad140bf295fb7a, type: 3}
+  Projectile: {fileID: 3199993505279492940, guid: f23955112072a39459f66b6ccfcd8555, type: 3}
 --- !u!114 &4640722258212369029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70fc45e3767dc03418864b681837b68c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dropping
-  DroppingDiff: 2
+  DroppingDiff: 4
 --- !u!50 &-4008870840696346522
 Rigidbody2D:
   serializedVersion: 5

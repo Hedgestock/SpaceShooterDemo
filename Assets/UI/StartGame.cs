@@ -13,6 +13,7 @@ public class StartGame : MonoBehaviour
 
     void OnDestroy()
     {
+        GameObject.Find("Grid").GetComponent<GameSpeedController>().IsRunning = true;
         GameObject.Find("Spawner").GetComponent<Spawner>().Spawning = true;
         GameObject.Find("Canvas").GetComponent<HUDTweenerTropFort>().On();
     }

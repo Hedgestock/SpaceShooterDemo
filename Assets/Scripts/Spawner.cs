@@ -5,7 +5,7 @@ public class Spawner : MonoBehaviour
 {
     public List<GameObject> Enemies;
 
-    Vector2 range = new(1, 3);
+    public Vector2 range = new(1, 3);
 
     bool spawning = false;
 

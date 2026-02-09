@@ -52,9 +52,6 @@ public class ShipMovement : MonoBehaviour
             float clampedY = Mathf.Clamp(transform.position.y, boundaries.yMin, boundaries.yMax);
             transform.position = new Vector3(clampedX, clampedY);
         }
-
-        Debug.Log($"{Vector2.SignedAngle(Vector2.up, body.linearVelocity)} {Vector2.SignedAngle(Quaternion.AngleAxis(-22.5f, Vector3.forward) * Vector2.down, body.linearVelocity) / 45 + 4}");
-
     }
     public void OnMove(InputAction.CallbackContext context)
     {

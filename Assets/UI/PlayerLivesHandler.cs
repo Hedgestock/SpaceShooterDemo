@@ -43,6 +43,7 @@ public class PlayerLivesHandler : MonoBehaviour
 
     void GameOver()
     {
+        GameObject.Find("Grid").GetComponent<GameSpeedController>().IsRunning = false;
         GameObject.Find("Spawner").GetComponent<Spawner>().Spawning = false;
         var HUDOff = GameObject.Find("Canvas").GetComponent<HUDTweenerTropFort>().Off();
         HUDOff.AppendCallback(() => Lives = 3);
