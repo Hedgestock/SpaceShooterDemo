@@ -329,6 +329,8 @@ MonoBehaviour:
   animator: {fileID: 7144771558903515754}
   body: {fileID: -8046169824653904833}
   speed: 5
+  playerInput: {fileID: 6226210413580110506}
+  movement: {x: 0, y: 0, z: 0}
 --- !u!114 &6226210413580110506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -371,10 +373,6 @@ MonoBehaviour:
     m_ActionId: 40fa42c7-32db-45bf-be50-5fbccc1104b4
     m_ActionName: 'Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 47a4fb9f-5939-4a27-bf56-a08182b18432
-    m_ActionName: 'Player/Look[/Mouse/delta,/Pen/delta]'
-  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3272006872851775303}
         m_TargetAssemblyTypeName: Charge, Assembly-CSharp
@@ -392,47 +390,15 @@ MonoBehaviour:
     m_ActionName: 'Player/Fire[/Mouse/leftButton,/Keyboard/space]'
   - m_PersistentCalls:
       m_Calls: []
-    m_ActionId: bad5cee9-c82c-4eca-bde9-9649bd28086f
-    m_ActionName: 'UI/Navigate[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
+    m_ActionId: 9b7256f4-9817-44b1-934b-0e68e8d2dacd
+    m_ActionName: Virtual/Move
   - m_PersistentCalls:
       m_Calls: []
-    m_ActionId: f49a4528-3b03-4b97-9ba0-fd06e9c3bfc3
-    m_ActionName: 'UI/Submit[/Keyboard/enter]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: fb149941-d094-43a6-b336-51fc2122fca5
-    m_ActionName: 'UI/Cancel[/Keyboard/escape]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 6da6f427-85b8-4c06-9630-40d56007433e
-    m_ActionName: 'UI/Point[/Mouse/position,/Pen/position]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 48b8d744-a551-4b45-9d67-477a7ea7ade9
-    m_ActionName: 'UI/Click[/Mouse/leftButton,/Pen/tip]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 5fe7ce85-ae28-4807-8be6-1297da81d0ef
-    m_ActionName: 'UI/ScrollWheel[/Mouse/scroll]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 68c87273-6f0f-450d-8f4d-0e9e2e2fed5f
-    m_ActionName: 'UI/MiddleClick[/Mouse/middleButton]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: d02700d7-5b1b-4e91-8627-c4896adec9f8
-    m_ActionName: 'UI/RightClick[/Mouse/rightButton]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 5040523d-3b47-44ed-b515-a0f790ae9e77
-    m_ActionName: UI/TrackedDevicePosition
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 0f75263f-e06d-4ee5-af6b-42d5533d7322
-    m_ActionName: UI/TrackedDeviceOrientation
+    m_ActionId: bc9caacd-2e74-4be4-8a68-3573387967ef
+    m_ActionName: Virtual/Fire
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
+  m_DefaultActionMap: b8b66ce3-4d9b-4c18-a6d8-8cc90767e978
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!60 &2548527904088888477

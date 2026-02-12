@@ -15,6 +15,8 @@ public class ShipMovement : MonoBehaviour
 
     public float speed = 5f;
 
+    public PlayerInput playerInput;
+
     Rect boundaries;
 
     void Start()
@@ -24,9 +26,13 @@ public class ShipMovement : MonoBehaviour
         boundaries = new(-width / 2, -height, width, height);
 
         transform.position = new(0, boundaries.y * .75f);
+
+        var actions = playerInput.actions;
+        //actions.FindActionMap("Player").Enable();
+        //actions.FindActionMap("Virtual").Enable();
     }
 
-    Vector3 movement = Vector3.zero;
+    public Vector3 movement = Vector3.zero;
     // FixedUpdate is called every fixed framerate frame, used for physics operations
     void FixedUpdate()
     {

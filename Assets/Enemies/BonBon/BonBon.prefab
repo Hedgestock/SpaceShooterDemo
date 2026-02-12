@@ -256,7 +256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 814219107fa696144bf8a18ab1cbd9d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DropLoot
-  DropPercentage: 30
+  DropPercentage: 40
   Items:
   - {fileID: 9187464667678637342, guid: ae55c929249b0c5439e7bd42dc397d21, type: 3}
   - {fileID: 9187464667678637342, guid: ae55c929249b0c5439e7bd42dc397d21, type: 3}
